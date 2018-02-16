@@ -11,7 +11,7 @@ apps:
 
   putty:
     command: putty
-    desktop: bin/putty
+#    desktop: bin/putty
 
 parts:
   putty:
