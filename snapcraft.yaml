@@ -11,6 +11,7 @@ apps:
 
   putty:
     command: desktop-launch $SNAP/putty
+    desktop: putty
 
 parts:
   putty:
