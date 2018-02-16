@@ -9,7 +9,7 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 
 apps:
 
-  gtk3-demo:
+  putty:
     command: desktop-launch putty
 
 parts:
