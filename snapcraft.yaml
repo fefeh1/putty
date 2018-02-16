@@ -1,4 +1,4 @@
-name: putty
+name: putty-gtk
 version: '0.70+git' # Putty Version
 summary: PuTTY is a free implementation of SSH and Telnet for Windows and Unix platforms # 79 char long summary
 description: |
