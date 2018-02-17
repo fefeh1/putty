@@ -11,7 +11,7 @@ apps:
 
   putty:
     command: bin/putty
-#    desktop: bin/putty
+    desktop: putty.desktop
     plugs:
       - browser-support
       - desktop
