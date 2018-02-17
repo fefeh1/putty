@@ -11,7 +11,7 @@ apps:
 
   putty:
     command: bin/putty
-    desktop: $SNAP/putty.desktop
+    desktop: usr/share/applications/putty.desktop
     plugs:
       - browser-support
       - desktop
@@ -29,9 +29,11 @@ apps:
 
 parts:
   putty:
-  
+    prepare:
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
+      cp -v snap/gui/putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
+      
     build-packages:
-
       - libc6
       - libgdk-pixbuf2.0-0 
       - libglib2.0-0
@@ -41,8 +43,7 @@ parts:
       - putty-tools
       - putty-doc
       
-    stage-packages:
-    
+    stage-packages:  
       - libcanberra-gtk-module
       - gtk2-engines-pixbuf
       
