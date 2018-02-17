@@ -36,7 +36,7 @@ parts:
 
     prepare: |
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
-      cp -v ${SNAP}/snap/gui/putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
+      cp -v snap/gui/putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
       
     build-packages:
       - libc6
