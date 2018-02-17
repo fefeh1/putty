@@ -30,9 +30,9 @@ apps:
 
 parts:
   putty:
-    desktop:
-      source: snap/gui
-      plugin: dump
+#    desktop:
+#      source: snap/gui
+#      plugin: dump
 
     install: |
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
