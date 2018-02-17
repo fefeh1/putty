@@ -27,6 +27,12 @@ parts:
       - putty-tools
       - putty-doc
       
+    stage-packages:
+    
+      - libcanberra-gtk-module
+      - gtk2-engines-pixbuf
+      
+      
     source: https://the.earth.li/~sgtatham/putty/latest/putty-0.70.tar.gz
     plugin: autotools
     after: [desktop-gtk2] 
