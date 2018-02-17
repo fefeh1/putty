@@ -5,4 +5,4 @@ Type=Application
 Terminal=false
 Exec=/snap/bin/putty-gtk.putty
 Name=Putty
-Icon=putty.svg
+Icon=puTTY.svg
