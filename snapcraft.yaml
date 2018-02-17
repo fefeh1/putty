@@ -12,6 +12,20 @@ apps:
   putty:
     command: bin/putty
 #    desktop: bin/putty
+    plugs:
+      - browser-support
+      - desktop
+      - desktop-legacy
+      - gsettings
+      - home
+#      - media-hub
+      - network-bind
+      - network-manager
+      - opengl
+#      - optical-drive
+#      - removable-media
+      - unity7
+      - x11
 
 parts:
   putty:
