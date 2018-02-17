@@ -6,6 +6,7 @@ description: |
 
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
+icon: putty.svg
 
 apps:
 
@@ -29,7 +30,7 @@ apps:
 
 parts:
   putty:
-    prepare:
+    prepare: |
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
       cp -v snap/gui/putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
       
