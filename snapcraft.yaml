@@ -11,7 +11,7 @@ apps:
 
   putty:
     command: bin/putty
-    desktop: snap/gui/putty.desktop
+    desktop: $SNAP/putty.desktop
     plugs:
       - browser-support
       - desktop
