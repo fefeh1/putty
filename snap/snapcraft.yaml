@@ -34,7 +34,7 @@ parts:
 #    plugin: dump
     prepare: |
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
-      cp -v gui/putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
+      cp -v ${SNAP}/gui/putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
       
     build-packages:
       - libc6
