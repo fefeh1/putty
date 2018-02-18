@@ -29,11 +29,14 @@ apps:
       - x11
 
 parts:
-  putty:
-    source: gui
+
+  desktopfile:
+    source: gui/
     plugin: dump
-#    organize:
-#      snap/gui/putty.desktop: usr/share/applications/putty.desktop
+    organize:
+      gui/putty.desktop usr/share/applications/putty.desktop
+    
+  putty:
       
     build-packages:
       - libc6
