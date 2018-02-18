@@ -30,8 +30,8 @@ apps:
 
 parts:
   putty:
-    source: gui
-    plugin: dump
+#    source: gui
+#    plugin: dump
     prepare: |
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
       cp -v putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
