@@ -30,11 +30,10 @@ apps:
 
 parts:
   putty:
-#    source: gui
+    source: gui
 #    plugin: dump
-    prepare: |
-      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
-      cp -v ${SNAP}/snap/gui/putty.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications
+    organize:
+      snap/gui/putty.desktop: usr/share/applications/putty.desktop
       
     build-packages:
       - libc6
