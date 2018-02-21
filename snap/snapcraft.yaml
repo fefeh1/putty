@@ -31,7 +31,7 @@ apps:
 parts:
 
   desktopfile:
-    source: gui/
+    source: snap/gui/
     plugin: dump
     organize:
       putty.desktop: usr/share/applications/putty.desktop
