@@ -63,7 +63,7 @@ parts:
       
     stage-packages:  
       - libcanberra-gtk-module
-#      - libcanberra-gtk-module:i386
+      - libcanberra-gtk-module:i386
       - libgdk-pixbuf2.0-0
       - gtk2-engines-pixbuf
       
