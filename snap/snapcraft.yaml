@@ -48,38 +48,24 @@ parts:
   putty:
     
     after: [enable-i386]
+    
     build-packages:
-      - on i386:
-        - libc6
-        - libcanberra-gtk-module
-        - libgdk-pixbuf2.0-0
-        - libglib2.0-0
-        - libgtk2.0-0
-        - libpango-1.0-0
-        - libx11-6
-        - putty-tools
-        - putty-doc
-      - on amd64:
-        - libc6:i386
-        - libcanberra-gtk-module:i386
-        - libgdk-pixbuf2.0-0:i386
-        - libglib2.0-0:i386
-        - libgtk2.0-0:i386
-        - libpango-1.0-0:i386
-        - libx11-6:i386
-        - putty-tools
-        - putty-doc
+      - libc6
+      - libcanberra-gtk-module
+      - libgdk-pixbuf2.0-0 
+      - libglib2.0-0
+      - libgtk2.0-0 
+      - libpango-1.0-0
+      - libx11-6
+      - putty-tools
+      - putty-doc
       
-    stage-packages:
-      - on i386:
-        - libcanberra-gtk-module
-        - libgdk-pixbuf2.0-0
-        - gtk2-engines-pixbuf
-      - on amd64:
-        - libcanberra-gtk-module:i386
-        - libgdk-pixbuf2.0-0:i386
-        - gtk2-engines-pixbuf:i386
-              
+    stage-packages:  
+      - libcanberra-gtk-module
+      - libcanberra-gtk-module:i386
+      - libgdk-pixbuf2.0-0
+      - gtk2-engines-pixbuf
+      
       
     source: https://the.earth.li/~sgtatham/putty/latest/putty-0.70.tar.gz
     plugin: autotools
