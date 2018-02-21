@@ -40,6 +40,7 @@ parts:
       
     build-packages:
       - libc6
+      - libcanberra-gtk-module
       - libgdk-pixbuf2.0-0 
       - libglib2.0-0
       - libgtk2.0-0 
@@ -50,6 +51,7 @@ parts:
       
     stage-packages:  
       - libcanberra-gtk-module
+      - libgdk-pixbuf2.0-0
       - gtk2-engines-pixbuf
       
       
