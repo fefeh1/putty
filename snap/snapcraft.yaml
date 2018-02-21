@@ -69,4 +69,4 @@ parts:
       
     source: https://the.earth.li/~sgtatham/putty/latest/putty-0.70.tar.gz
     plugin: autotools
-    after: [desktop-gtk2] 
+    after: [desktop-gtk2]
