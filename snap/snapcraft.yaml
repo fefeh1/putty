@@ -7,9 +7,6 @@ description: |
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 icon: puTTY.svg
-architectures:
-  - amd64
-  - i386
 
 apps:
 
@@ -33,12 +30,6 @@ apps:
 
 parts:
 
-  enable-i386:
-    plugin: nil
-    prepare: |
-      dpkg --add-architecture i386
-      apt update
-
   desktopfile:
     source: snap/gui/
     plugin: dump
@@ -46,9 +37,7 @@ parts:
       putty.desktop: usr/share/applications/putty.desktop
     
   putty:
-    
-    after: [enable-i386]
-    
+      
     build-packages:
       - libc6
       - libcanberra-gtk-module
@@ -62,7 +51,6 @@ parts:
       
     stage-packages:  
       - libcanberra-gtk-module
-      - libcanberra-gtk-module:i386
       - libgdk-pixbuf2.0-0
       - gtk2-engines-pixbuf
       
