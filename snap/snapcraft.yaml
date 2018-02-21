@@ -34,7 +34,7 @@ parts:
     source: gui/
     plugin: dump
     organize:
-      snap/gui/putty.desktop: usr/share/applications/putty.desktop
+      putty.desktop: usr/share/applications/putty.desktop
     
   putty:
       
