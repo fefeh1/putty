@@ -34,7 +34,7 @@ parts:
     source: gui/
     plugin: dump
     organize:
-      usr/share/applications/putty.desktop: gui/putty.desktop 
+      gui/putty.desktop: usr/share/applications/putty.desktop
     
   putty:
       
