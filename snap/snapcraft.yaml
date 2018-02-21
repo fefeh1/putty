@@ -52,7 +52,6 @@ parts:
     build-packages:
       - libc6
       - libcanberra-gtk-module
-#      - libcanberra-gtk-module:i386
       - libgdk-pixbuf2.0-0
       - libglib2.0-0
       - libgtk2.0-0
