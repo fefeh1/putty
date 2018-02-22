@@ -45,8 +45,10 @@ parts:
       putty.desktop: usr/share/applications/putty.desktop
     
   putty:
+    after: [enable-i386]
       
     build-packages:
+      - zlib1g
       - libc6
       - libcanberra-gtk-module
       - libgdk-pixbuf2.0-0 
