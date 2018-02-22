@@ -60,15 +60,12 @@ parts:
       - putty-doc
       
     stage-packages:
+      - libgdk-pixbuf2.0-0
+      - gtk2-engines-pixbuf
     - on i386:
       - libcanberra-gtk-module
-      - libgdk-pixbuf2.0-0
-      - gtk2-engines-pixbuf
     - on amd64:
-      - libcanberra-gtk-module:i386
-      - libgdk-pixbuf2.0-0
-      - gtk2-engines-pixbuf
-      
+      - libcanberra-gtk-module:i386      
       
       
     source: https://the.earth.li/~sgtatham/putty/latest/putty-0.70.tar.gz
