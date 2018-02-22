@@ -32,6 +32,11 @@ apps:
       - x11
 
 parts:
+  enable-i386:
+    plugin: nil
+    prepare: |
+      dpkg --add-architecture i386
+      apt update
 
   desktopfile:
     source: snap/gui/
