@@ -60,7 +60,7 @@ parts:
       - putty-tools
       - putty-doc
     - on amd64:
-      - zlib1g
+#      - zlib1g
       - libc6
       - libcanberra-gtk-module
       - libgdk-pixbuf2.0-0
@@ -73,6 +73,7 @@ parts:
       - libgdk-pixbuf2.0-0
       - gtk2-engines-pixbuf
     - on amd64:
+      - zlib1g
       - libcanberra-gtk-module:i386
       - libgdk-pixbuf2.0-0:i386
       - gtk2-engines-pixbuf
