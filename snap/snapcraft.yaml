@@ -63,7 +63,7 @@ parts:
       - zlib1g
       - libc6
       - libcanberra-gtk-module:i386
-      - libgdk-pixbuf2.0-0:i386
+      - libgdk-pixbuf2.0-0
       - gtk2-engines-pixbuf
       
       
