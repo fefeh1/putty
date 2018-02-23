@@ -48,6 +48,7 @@ parts:
     after: [enable-i386, desktop-gtk2]
       
     build-packages:
+    - on i386:
       - zlib1g
       - libc6
       - libcanberra-gtk-module
@@ -58,6 +59,13 @@ parts:
       - libx11-6
       - putty-tools
       - putty-doc
+    - on amd64:
+      - zlib1g:i386
+      - libc6:i386
+      - libcanberra-gtk-module:i386
+      - libgtk-pixbuf2.0-0:i386
+      - gtk2-engines-pixbuf:i386
+      
       
     stage-packages:
     - on i386:
