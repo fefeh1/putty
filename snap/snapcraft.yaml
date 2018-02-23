@@ -60,7 +60,7 @@ parts:
       - putty-tools
       - putty-doc
     - on amd64:
-      - zlib1g:i386
+      - zlib1g
       - libc6:i386
       - libcanberra-gtk-module:i386
       - libgdk-pixbuf2.0-0:i386
