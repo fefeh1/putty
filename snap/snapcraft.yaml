@@ -64,7 +64,7 @@ parts:
       - libc6:i386
       - libcanberra-gtk-module:i386
       - libgdk-pixbuf2.0-0:i386
-      - gtk2-engines-pixbuf:i386
+      - gtk2-engines-pixbuf
       
       
     stage-packages:
@@ -75,7 +75,7 @@ parts:
     - on amd64:
       - libcanberra-gtk-module:i386
       - libgdk-pixbuf2.0-0:i386
-      - gtk2-engines-pixbuf:i386
+      - gtk2-engines-pixbuf
       
       
       
