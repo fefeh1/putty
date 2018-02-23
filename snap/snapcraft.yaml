@@ -62,7 +62,7 @@ parts:
     - on amd64:
       - zlib1g
       - libc6
-      - libcanberra-gtk-module:i386
+      - libcanberra-gtk-module
       - libgdk-pixbuf2.0-0
       - gtk2-engines-pixbuf
       
