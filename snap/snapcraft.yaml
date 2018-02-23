@@ -14,7 +14,7 @@ architectures:
 apps:
 
   putty:
-    command: bin/putty
+    command: desktop-launch bin/putty
     desktop: usr/share/applications/putty.desktop
     plugs:
       - browser-support
