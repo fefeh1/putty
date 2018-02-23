@@ -45,7 +45,7 @@ parts:
       putty.desktop: usr/share/applications/putty.desktop
     
   putty:
-    after: [enable-i386]
+    after: [enable-i386, desktop-gtk2]
       
     build-packages:
       - zlib1g
